@@ -1,0 +1,17 @@
+{{#if category}}
+<h3>Edição de categoria</h3>
+<div class="card pd-2">
+    <div class="card-body">
+        <form action="/admin/categories/edit" method="post" class="mb-3">
+            <input type="hidden" name="id" value="{{category._id}}">
+            <label for="name" class="form-label">Nome</label>
+            <input class="form-control" type="text" id="nome" name="name"
+            value="{{category.name}}"
+            placeholder="Nome da categoria">
+            <label for="slug" class="form-label">Slug: </label>
+            <input class="form-control mb-3" type="text" id="slug" name="slug"
+            value="{{category.slug}}" placeholder="Slug da categoria">
+            <button type="submit" class="btn btn-success">Editar categoria</button>
+        </form>
+    </div>
+{{/if}}

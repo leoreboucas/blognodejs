@@ -1,0 +1,18 @@
+<h2>Lista de categorias</h2>
+<hr>
+<a href="/admin/categories/add"><button class="btn btn-success">Nova categoria</button></a>
+{{#each categories}}
+    <ul class="list-group mt-4">
+        <li  class="list-group-item">
+            <h4>{{name}}</h4>
+            <small>Slug: {{slug}}</small>
+            <br>
+            <small>Data de criação: {{date}}</small>
+            <br>
+            <a href="/admin/categories/edit/{{_id}}"><button class="btn btn-success">Editar categoria</button></a>
+           <a href="/admin/categories/delete/{{_id}}"><button class="btn btn-danger">Deletar categoria</button></a>
+        </li>
+    </ul>
+{{else}}
+    <h4 class="mt-4">Nenhuma categoria registrada</h4>
+{{/each}}
