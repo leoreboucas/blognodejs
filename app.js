@@ -12,6 +12,7 @@ const Category = require('./models/Category');
 const User = require('./models/User');
 const auth = require('./middlewares/auth')
 require('dotenv').config()
+const URI = process.env.URI
 
 
 const app = express();
@@ -65,7 +66,6 @@ const user = require('./routes/user');
 
     // Mongoose
         mongoose.Promise = global.Promise
-        const URI = "mongodb://localhost/blogapp"
         mongoose.connect(URI).then(()=> {
             console.log("Conectado ao banco de dados")
         }).catch((err) => {
