@@ -26,6 +26,7 @@ com sistema de autenticação, autorização por nível de acesso (admin) e CRUD
 
 ## 📁 Estrutura do Projeto
 
+```
 ├── models/
 │   ├── User.js
 │   ├── Post.js
@@ -50,6 +51,8 @@ com sistema de autenticação, autorização por nível de acesso (admin) e CRUD
 │
 ├── app.js
 └── package.json
+```
+
 
 ## 📌 Pré-requisitos
 
@@ -80,8 +83,8 @@ Crie um arquivo `.env` na raiz do projeto:
 
 ```bash
 env
-SESSION_SECRET=suachave
-MONGO_URI=mongodb://localhost/blogapp
+SESSION_PASSWORD=suachave
+URI=mongodb://localhost/blogapp
 
 ---
 ```
