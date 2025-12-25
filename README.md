@@ -3,6 +3,9 @@
 Aplicação de blog desenvolvida com Node.js, Express, MongoDB e Handlebars,
 com sistema de autenticação, autorização por nível de acesso (admin) e CRUD completo.
 
+[Link do Deploy](http://18.230.193.26:3000)
+
+
 ## 🚀 Tecnologias
 
 - Node.js
